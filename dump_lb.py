@@ -27,7 +27,7 @@ if old_kernel: print('Old Kernel')
 bpf_text = 'old_dump_lb.c' if old_kernel else 'dump_lb.c'
 
 # initialize BPF & probes
-b = BPF(src_file=bpf_text)
+b = BPF(src_file=bpf_text,cflags=["-Wno-duplicate-decl-specifier"])
 
 
 def can_migrate_handler(cpu, data, size):
