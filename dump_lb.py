@@ -54,4 +54,4 @@ while True:
         print(can_migrate_datasource.dump())
         exit()
     except Exception as e:
-        logger.warn(e)
+        logger.warning(e)
