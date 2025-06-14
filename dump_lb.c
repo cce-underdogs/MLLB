@@ -174,7 +174,7 @@ int KPROBE(can_migrate_task) (struct pt_regs *ctx, struct task_struct *p, struct
     data.dst_cpu = env->dst_cpu;
     data.imbalance = env->imbalance;
     data.cpu_idle = idle == CPU_IDLE;
-    data.cpu_not_idle = idle == CPU_NOT_IDLE;
+    data.cpu_not_idle = idle == __CPU_NOT_IDLE;
     data.cpu_newly_idle = idle == CPU_NEWLY_IDLE;
 
     data.curr_pid = pid;
