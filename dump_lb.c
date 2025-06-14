@@ -1,8 +1,7 @@
 #include <uapi/linux/ptrace.h>
 #include <linux/sched.h>
 #include <bcc/proto.h>
-#include <linux/bpf.h>
-#include <linux/kernel.h>
+// #include <linux/kernel.h>
 #include <linux/sched/topology.h>
 #include <linux/percpu.h>
 #include <linux/sched/mm.h>
